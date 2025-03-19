@@ -2,28 +2,38 @@
 My cartoon rendering using OpenCV
 
 **설명**
+
 이미지 파일을 카툰 형식으로 반환해주는 프로그램입니다.
 
 이 코드는 OpenCV를 이용해 이미지를 만화 스타일로 변환합니다.
+
 -노이즈 제거: bilateralFilter()로 부드러운 필터링 적용
+
 -엣지 감지: adaptiveThreshold()로 경계를 강조
+
 -색상 단순화: k-means clustering으로 색상을 제한
+
 -엣지와 색상 결합: bitwise_and()로 만화 효과 생성
+
 -마지막으로 변환된 이미지를 저장하고 출력
 
 **예시1**
 ![원본 이미지](/imgs/img-k2.jpg)
 원본 이미지
 
+
 ![변형된 이미지](/imgs/cartoon-k2.jpg)
 변형된 이미지
+
 
 **예시2**
 ![원본 이미지](/imgs/img-night-city.jpg)
 원본 이미지
 
+
 ![변형된 이미지](/imgs/cartoon-night-city.jpg)
-변형된 이미지지
+변형된 이미지
+
 
 **추가 설명**
 1. 예시1에서 전차의 모습은 만화의 느낌으로 잘 재표현된 것을 볼 수 있습니다.
